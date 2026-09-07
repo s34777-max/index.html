@@ -1,32 +1,60 @@
-<!-- นี่คือโครงสร้างหน้าเว็บทังหมด ้ -->
 <!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>หน้าแนะน;าตัวของฉัน</title>
+<title>หน้าแนะนำตัวของฉัน</title>
+<!-- นำเข้าฟอนต์ Kanit จาก Google Fonts เพื่อความสวยงาม -->
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 body {
-background-color: #87CEFA; color: #333;
-text-align: center; padding: 50px;
-
+    /* เปลี่ยนพื้นหลังเป็นสีเหลืองอ่อนพาสเทล */
+    background-color: #FFF9E6; 
+    color: #333;
+    text-align: center; 
+    padding: 50px;
+    /* ตั้งค่าฟอนต์หลักของเว็บ */
+    font-family: 'Kanit', sans-serif;
 }
 .card {
-background: white; border-radius: 50px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-max-width: 500px; margin: 0 auto; padding: 30px;
-
+    background: white; 
+    border-radius: 30px; /* ปรับความโค้งมนให้ดูละมุนขึ้น */
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.15); /* เงาสีเหลืองนวล */
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 30px;
+    border: 2px solid #FFE082; /* เพิ่มกรอบสีเหลืองทองบางๆ */
 }
-h1 { color: #2c3e50; }
-p { font-size: 18px; line-height: 1.6; }
+h1 { 
+    color: #F57F17; /* หัวข้อสีเหลืองอำพันเข้ม ตัดกับพื้นหลัง */
+}
+p { 
+    font-size: 18px; 
+    line-height: 1.6; 
+}
+.btn-portfolio {
+    display: inline-block; 
+    /* เปลี่ยนปุ่มเป็นโทนสีเหลืองทอง-ส้มสดใส */
+    background: #FFB300; 
+    color: white; 
+    padding: 12px 24px; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    margin-top: 15px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+.btn-portfolio:hover {
+    background: #FFA000; /* สีเข้มขึ้นเมื่อเอาเมาส์ชี้ */
+}
 </style>
 </head>
 <body>
 <div class="card">
-<h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน </h1>
-<p>สวัสดีครับ! ผมช่อื <strong>สุรางคนา (surangkhana)</strong></p>
-<p>ขณะนี้ก;าลังศึกษา/สนใจด้าน Computer Science & Engineering</p>
+<h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน</h1>
+<p>สวัสดีครับ! ผมชื่อ <strong>สุรางคนา (Surangkhana)</strong></p>
+<p>ขณะนี้กำลังศึกษา/สนใจด้าน Computer Science & Engineering</p>
 <p>นี่คือเว็บไซต์แรกของผมที่โฮสต์บน GitHub Pages!</p>
-<a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👉 ดูแฟ้มสะสมงานของผม</a>
+<a href="portfolio.html" class="btn-portfolio">👉 ดูแฟ้มสะสมงานของผม</a>
 </div>
 </body>
 </html>
