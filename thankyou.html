@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - สุรางคนา</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
 
+        body {
+            background-color: #FFF9E6;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 8px 25px rgba(255, 193, 7, 0.2);
+            max-width: 650px;
+            width: 100%;
+            padding: 40px;
+            border: 2px solid #FFE082;
+            text-align: center;
+        }
+
+        /* รูปหน้าตนเอง สเกล 16:9 */
+        .my-photo-frame {
+            width: 100%;
+            max-width: 440px;
+            aspect-ratio: 16 / 9;
+            margin: 0 auto 25px auto;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid #FFB300;
+            box-shadow: 0 4px 15px rgba(255, 179, 0, 0.25);
+            background-color: #FFF8E1;
+        }
+
+        .my-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        h1 {
+            color: #F57F17;
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+        }
+
+        .thank-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #424242;
+            margin-bottom: 30px;
+        }
+
+        /* โซนโลโก้และชื่อมหาวิทยาลัย */
+        .university-section {
+            background: #FFFDE7;
+            border: 1px solid #FFF59D;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .uni-logo {
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+        .uni-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #E65100;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            color: #795548;
+            background-color: #EFEBE9;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: #FFB300;
+            box-shadow: 0 4px 12px rgba(255, 179, 0, 0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- กรอบใส่รูปตนเอง (16:9) -->
+        <div class="my-photo-frame">
+            <img src="my-photo.jpg" alt="Surangkhana Photo" class="my-photo">
+        </div>
+
+        <h1>THANK YOU</h1>
+        
+        <p class="thank-text">
+            ขอขอบพระคุณท่านคณะกรรมการเป็นอย่างสูงที่ได้เสียสละเวลาอันมีค่าในการรับชมและพิจารณาแฟ้มสะสมผลงานฉบับนี้<br>
+            หวังเป็นอย่างยิ่งว่าจะได้รับโอกาสในการเข้าศึกษาต่อในคณะและมหาวิทยาลัยในฝันค่ะ
+        </p>
+
+        <!-- โซนโลโก้และชื่อมหาวิทยาลัย -->
+        <div class="university-section">
+            <img src="uni-logo.png" alt="University Logo" class="uni-logo">
+            <div class="uni-name">สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</div>
+        </div>
+
+        <div class="btn-group">
+            <a href="portfolio.html" class="btn">← ย้อนกลับไปหน้าผลงาน</a>
+            <a href="index.html" class="btn">กลับหน้าแรก 🏠</a>
+        </div>
+    </div>
+
+</body>
+</html>
