@@ -1,60 +1,130 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<title>หน้าแนะนำตัวของฉัน</title>
-<!-- นำเข้าฟอนต์ Kanit จาก Google Fonts เพื่อความสวยงาม -->
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-body {
-    /* เปลี่ยนพื้นหลังเป็นสีเหลืองอ่อนพาสเทล */
-    background-color: #FFF9E6; 
-    color: #333;
-    text-align: center; 
-    padding: 50px;
-    /* ตั้งค่าฟอนต์หลักของเว็บ */
-    font-family: 'Kanit', sans-serif;
-}
-.card {
-    background: white; 
-    border-radius: 30px; /* ปรับความโค้งมนให้ดูละมุนขึ้น */
-    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.15); /* เงาสีเหลืองนวล */
-    max-width: 500px; 
-    margin: 0 auto; 
-    padding: 30px;
-    border: 2px solid #FFE082; /* เพิ่มกรอบสีเหลืองทองบางๆ */
-}
-h1 { 
-    color: #F57F17; /* หัวข้อสีเหลืองอำพันเข้ม ตัดกับพื้นหลัง */
-}
-p { 
-    font-size: 18px; 
-    line-height: 1.6; 
-}
-.btn-portfolio {
-    display: inline-block; 
-    /* เปลี่ยนปุ่มเป็นโทนสีเหลืองทอง-ส้มสดใส */
-    background: #FFB300; 
-    color: white; 
-    padding: 12px 24px; 
-    text-decoration: none; 
-    border-radius: 8px; 
-    margin-top: 15px;
-    font-weight: 600;
-    transition: background 0.3s;
-}
-.btn-portfolio:hover {
-    background: #FFA000; /* สีเข้มขึ้นเมื่อเอาเมาส์ชี้ */
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแนะนำตัวของฉัน - สุรางคนา</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            background-color: #FFF9E6; 
+            color: #333;
+            text-align: center; 
+            padding: 50px 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white; 
+            border-radius: 30px;
+            box-shadow: 0 8px 25px rgba(255, 193, 7, 0.2);
+            max-width: 520px; 
+            width: 100%;
+            padding: 40px 30px;
+            border: 2px solid #FFE082;
+        }
+
+        .profile-frame {
+            width: 100%;
+            max-width: 440px;
+            aspect-ratio: 16 / 9;
+            margin: 0 auto 25px auto;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid #FFB300;
+            box-shadow: 0 4px 15px rgba(255, 179, 0, 0.25);
+            background-color: #FFF8E1;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        h1 { 
+            color: #F57F17;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        p { 
+            font-size: 1.1rem; 
+            line-height: 1.7; 
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: block;
+            padding: 12px 24px; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #FFB300; 
+            color: white; 
+            box-shadow: 0 4px 12px rgba(255, 179, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #FFA000;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #FFF3E0;
+            color: #E65100;
+            border: 1px solid #FFE082;
+        }
+
+        .btn-secondary:hover {
+            background: #FFE0B2;
+        }
+    </style>
 </head>
 <body>
-<div class="card">
-<h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน</h1>
-<p>สวัสดีค่ะ ดิฉันชื่อ <strong>สุรางคนา (Surangkhana)</strong></p>
-<p>ขณะนี้กำลังศึกษา/สนใจด้าน Computer Science & Engineering</p>
-<p>นี่คือแฟ้มสะสมผลงานของฉันค่ะ</p>
-<a href="portfolio.html" class="btn-portfolio">👉 ดูแฟ้มสะสมงานของฉัน</a>
-</div>
+
+    <div class="card">
+        <div class="profile-frame">
+            <!-- ย้ายไฟล์รูปหน้าตัวเองมาวางคู่กับไฟล์ HTML แล้วเปลี่ยนชื่อเป็น my-photo.jpg -->
+            <img src="my-photo.jpg" alt="Surangkhana Photo" class="profile-img">
+        </div>
+
+        <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน</h1>
+        <p>
+            สวัสดีค่ะ ดิฉันชื่อ <strong>นางสาว สุรางคนา คุณรักษา</strong><br>
+            ขณะนี้กำลังศึกษา/สนใจด้าน Computer Science & Engineering
+        </p>
+
+        <div class="btn-group">
+            <a href="intro.html" class="btn btn-primary">เริ่มต้นอ่านคำนำ →</a>
+            <a href="about.html" class="btn btn-secondary">ประวัติส่วนตัว</a>
+            <a href="portfolio.html" class="btn btn-secondary">ผลงานและเกียรติบัตร</a>
+            <a href="thankyou.html" class="btn btn-secondary">หน้าปิดท้าย</a>
+        </div>
+    </div>
+
 </body>
 </html>
