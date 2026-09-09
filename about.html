@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - สุรางคนา</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
 
+        body {
+            background-color: #FFF9E6;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 8px 25px rgba(255, 193, 7, 0.2);
+            max-width: 650px;
+            width: 100%;
+            padding: 40px;
+            border: 2px solid #FFE082;
+            text-align: center;
+        }
+
+        h1 {
+            color: #F57F17;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #FFE082;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #E65100;
+            font-size: 1.3rem;
+            margin: 25px 0 15px 0;
+            text-align: left;
+            border-left: 4px solid #FFB300;
+            padding-left: 10px;
+        }
+
+        .info-list {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-size: 1.05rem;
+        }
+
+        .info-item {
+            background: #FFFDE7;
+            padding: 12px 20px;
+            border-radius: 12px;
+            border: 1px solid #FFF59D;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-label {
+            color: #E65100;
+            font-weight: 600;
+        }
+
+        .info-value {
+            color: #424242;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        .skill-tag {
+            background: #FFF3E0;
+            border: 1px solid #FFE082;
+            color: #E65100;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: #FFE0B2;
+            transform: translateY(-2px);
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-secondary {
+            color: #795548;
+            background-color: #EFEBE9;
+        }
+
+        .btn-secondary:hover {
+            background-color: #D7CCC8;
+        }
+
+        .btn-primary {
+            color: white;
+            background-color: #FFB300;
+            box-shadow: 0 4px 12px rgba(255, 179, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: #FFA000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>ABOUT ME (แนะนำตัวเอง)</h1>
+
+        <div class="info-list">
+            <div class="info-item">
+                <span class="info-label">ชื่อ-นามสกุล:</span>
+                <span class="info-value">นางสาว สุรางคนา คุณรักษา</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">อายุ:</span>
+                <span class="info-value">17 ปี</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">วันเกิด:</span>
+                <span class="info-value">6 ธันวาคม 2551</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">เชื้อชาติ / สัญชาติ:</span>
+                <span class="info-value">ไทย / ไทย</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">ศาสนา:</span>
+                <span class="info-value">พุทธ</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">เบอร์โทรติดต่อ:</span>
+                <span class="info-value">0999999987</span>
+            </div>
+        </div>
+
+        <h2>ความสามารถพิเศษ & ความสนใจ (Skills & Interests)</h2>
+        <div class="skills-container">
+            <span class="skill-tag">💻 Computer Science & Programming</span>
+            <span class="skill-tag">⚙️ Basic Engineering Concepts</span>
+            <span class="skill-tag">🌐 Web Development (HTML / CSS)</span>
+            <span class="skill-tag">🧠 Logic & Problem Solving</span>
+            <span class="skill-tag">🎨 Creative Design & Presentation</span>
+        </div>
+
+        <div class="btn-group">
+            <a href="intro.html" class="btn btn-secondary">← ย้อนกลับไปคำนำ</a>
+            <a href="portfolio.html" class="btn btn-primary">ดูแฟ้มสะสมงาน →</a>
+        </div>
+    </div>
+
+</body>
+</html>
