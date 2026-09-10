@@ -34,11 +34,11 @@
             text-align: center;
         }
 
-        /* รูปหน้าตนเอง สเกล 16:9 */
+        /* ปรับกรอบใส่รูปตนเองเป็นแนวตั้ง 9:16 */
         .my-photo-frame {
             width: 100%;
-            max-width: 440px;
-            aspect-ratio: 16 / 9;
+            max-width: 260px; /* ปรับขนาดความกว้างเพื่อให้สัดส่วนแนวตั้งสมดุล */
+            aspect-ratio: 9 / 16; /* สลับอัตราส่วนเป็น 9:16 */
             margin: 0 auto 25px auto;
             border-radius: 16px;
             overflow: hidden;
@@ -122,9 +122,9 @@
 <body>
 
     <div class="card">
-        <!-- กรอบใส่รูปตนเอง (16:9) -->
+        <!-- กรอบใส่รูปตนเอง แนวตั้ง 9:16 -->
         <div class="my-photo-frame">
-            <img src="pyface.jpg" alt="Surangkhana Photo" class="my-photo">
+            <img src="pyface2-2.jpg" alt="Surangkhana Photo" class="my-photo">
         </div>
 
         <h1>THANK YOU</h1>
