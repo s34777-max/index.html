@@ -129,6 +129,36 @@
             line-height: 1.6;
         }
 
+        /* สไตล์เพิ่มเติมสำหรับส่วนรูปภาพกิจกรรม */
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 35px;
+        }
+
+        .activity-card {
+            background: white;
+            border-radius: 15px;
+            border: 1px solid #F8BBD0;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(233, 30, 99, 0.25);
+        }
+
+        .activity-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            background-color: #FCE4EC;
+        }
+
         .bottom-nav {
             text-align: center;
             margin-top: 40px;
@@ -214,13 +244,36 @@
             </div>
         </div>
 
+        <!-- หัวข้อเพิ่มเติม: รูปภาพกิจกรรม 2 รูป -->
+        <h2 class="section-title">📷 ภาพบรรยากาศกิจกรรม (Activity Gallery)</h2>
+
+        <div class="activity-grid">
+            <!-- รูปกิจกรรมที่ 1 -->
+            <div class="activity-card" onclick="openModal('activity1.jpg')">
+                <img src="pyHIfog.jpg" alt="ภาพบรรยากาศกิจกรรมที่ 1" class="activity-img">
+                <div class="card-body">
+                    <h3>การเข้าร่วมกิจกรรมบำเพ็ญประโยชน์และอบรมเชิงปฏิบัติการ</h3>
+                    <p>ภาพบรรยากาศการทำกิจกรรมร่วมกับเพื่อนๆ และวิทยากร เพื่อฝึกฝนทักษะการทำงานเป็นทีมและการมีจิตสาธารณะ</p>
+                </div>
+            </div>
+
+            <!-- รูปกิจกรรมที่ 2 -->
+            <div class="activity-card" onclick="openModal('activity2.jpg')">
+                <img src="pyHIfog2.jpg" alt="ภาพบรรยากาศกิจกรรมที่ 2" class="activity-img">
+                <div class="card-body">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
         <div class="bottom-nav">
             <a href="thankyou.html" class="btn-nav btn-next" style="padding: 14px 35px; font-size: 1.1rem;">ไปยังหน้าปิดท้าย →</a>
         </div>
     </div>
 
     <div id="imageModal" class="modal" onclick="closeModal()">
-        <img id="modalImg" class="modal-content" src="" alt="Enlarged Certificate Image">
+        <img id="modalImg" class="modal-content" src="" alt="Enlarged Image">
     </div>
 
     <script>
